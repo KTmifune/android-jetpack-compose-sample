@@ -1,2 +1,2 @@
 # android-jetpack-compose-sample
-AndroidのJetpackComposeのサンプルアプリ
+AndroidJetpackComposeで気になったComposable関数を使って作成したサンプルアプリ保存用リポジトリ
