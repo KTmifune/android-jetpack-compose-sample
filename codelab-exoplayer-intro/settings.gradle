@@ -1,6 +1,0 @@
-include ':app'
-include ':exoplayer-codelab-00'
-include ':exoplayer-codelab-01'
-include ':exoplayer-codelab-02'
-include ':exoplayer-codelab-03'
-include ':exoplayer-codelab-04'
