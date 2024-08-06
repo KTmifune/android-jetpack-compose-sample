@@ -12,6 +12,8 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.InputChip
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -19,6 +21,25 @@ import androidx.compose.ui.unit.dp
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun FlowScreen(innerPadding: PaddingValues = PaddingValues(0.dp)) {
+
+    val chipItems = remember {
+        mutableStateListOf(
+            "Price: High to Low",
+            "Avg rating: 4+",
+            "Free breakfast",
+            "Free cancellation",
+            "£50 pn",
+            "£50 pn",
+            "£50 pn",
+            "Free breakfast",
+            "Free cancellation",
+            "£50 pn",
+            "£50 pn",
+            "Free breakfast",
+            "£50 pn"
+        )
+    }
+
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -28,37 +49,32 @@ fun FlowScreen(innerPadding: PaddingValues = PaddingValues(0.dp)) {
             modifier = Modifier.padding(8.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
-            ChipItem("Price: High to Low")
-            ChipItem("Avg rating: 4+")
-            ChipItem("Free breakfast")
-            ChipItem("Free cancellation")
-            ChipItem("£50 pn")
-            ChipItem("£50 pn")
-            ChipItem("£50 pn")
-            ChipItem("£50 pn")
-            ChipItem("Free breakfast")
-            ChipItem("Free cancellation")
-            ChipItem("£50 pn")
-            ChipItem("Free breakfast")
-            ChipItem("£50 pn")
+            chipItems.forEachIndexed { index, it ->
+                ChipItem(
+                    index = index,
+                    text = it,
+                    onClick = {
+                        chipItems.remove(it)
+                    }
+                )
+            }
         }
     }
-}
 
+}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ChipItem(text: String) {
+fun ChipItem(index: Int = 0, text: String, onClick: () -> Unit) {
     InputChip(
         selected = false,
-        onClick = {},
+        onClick = onClick,
         label = {
-            Text(text = text)
+            Text(text = "$index : $text")
         }
     )
 
 }
-
 
 @Preview(showBackground = true, backgroundColor = 0xFFF0EAE2)
 @Composable
