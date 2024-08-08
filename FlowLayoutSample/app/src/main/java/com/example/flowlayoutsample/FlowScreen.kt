@@ -81,18 +81,6 @@ fun FlowScreenPreview() {
     FlowScreen()
 }
 
-@Preview(showBackground = true)
-@Composable
-fun AssistChipPreview() {
-    AssistChip(
-        onClick = {},
-        label = {
-            Text(text = "test")
-        }
-    )
-}
-
-
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview(showBackground = true)
 @Composable
