@@ -75,17 +75,3 @@ fun CrossDadeDemo() {
         }
     }
 }
-
-@Composable
-fun AnimatedCon() {
-    Row {
-        var count by remember { mutableStateOf(0) }
-        Button(onClick = { count++ }) {
-            Text("Add")
-        }
-        AnimatedContent(targetState = count, label = "") { targetCount ->
-            // Make sure to use `targetCount`, not `count`.
-            Text(text = "Count: $targetCount")
-        }
-    }
-}
