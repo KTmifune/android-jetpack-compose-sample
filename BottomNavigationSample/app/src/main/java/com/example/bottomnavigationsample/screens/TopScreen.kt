@@ -73,7 +73,6 @@ fun TopScreen() {
     }
 }
 
-
 @Composable
 fun BottomNavigationBar(
     items: List<Screen>,
@@ -144,12 +143,12 @@ sealed class Screen(
     val selectedIcon: ImageVector,
     val unselectedIcon: ImageVector
 ) {
-    data object Home : Screen("home", "Anime1", Icons.Filled.Home, Icons.Outlined.Home)
+    data object Home : Screen("home", "HOME", Icons.Filled.Home, Icons.Outlined.Home)
     data object Favorite :
-        Screen("favorite", "Anime2", Icons.Filled.Favorite, Icons.Outlined.FavoriteBorder)
+        Screen("favorite", "FAVORITE", Icons.Filled.Favorite, Icons.Outlined.FavoriteBorder)
 
     data object Setting :
-        Screen("setting", "Anime3", Icons.Filled.Settings, Icons.Outlined.Settings)
+        Screen("setting", "SETTING", Icons.Filled.Settings, Icons.Outlined.Settings)
 }
 
 @Preview(backgroundColor = 0xBEBEBE, showBackground = true)
