@@ -34,7 +34,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 
-
 @Composable
 fun TopScreen() {
     val items = listOf(
@@ -145,12 +144,12 @@ sealed class Screen(
     val selectedIcon: ImageVector,
     val unselectedIcon: ImageVector
 ) {
-    data object Home : Screen("home", "HOME", Icons.Filled.Home, Icons.Outlined.Home)
+    data object Home : Screen("home", "Anime1", Icons.Filled.Home, Icons.Outlined.Home)
     data object Favorite :
-        Screen("favorite", "FAVORITE", Icons.Filled.Favorite, Icons.Outlined.FavoriteBorder)
+        Screen("favorite", "Anime2", Icons.Filled.Favorite, Icons.Outlined.FavoriteBorder)
 
     data object Setting :
-        Screen("setting", "SETTING", Icons.Filled.Settings, Icons.Outlined.Settings)
+        Screen("setting", "Anime3", Icons.Filled.Settings, Icons.Outlined.Settings)
 }
 
 @Preview(backgroundColor = 0xBEBEBE, showBackground = true)
