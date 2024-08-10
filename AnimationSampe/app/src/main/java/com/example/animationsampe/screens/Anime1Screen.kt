@@ -29,7 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun HomeScreen() {
+fun Anime1Screen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -120,5 +120,5 @@ private enum class BoxState {
 @Preview(showBackground = true)
 @Composable
 fun HomeScreenPreview() {
-    HomeScreen()
+    Anime1Screen()
 }

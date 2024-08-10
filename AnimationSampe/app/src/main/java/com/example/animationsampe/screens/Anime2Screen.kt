@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun FavoriteScreen() {
+fun Anime2Screen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -101,5 +101,5 @@ fun AnimateContentSizeDemo() {
 @Preview(showBackground = true)
 @Composable
 fun FavoriteScreenPreview() {
-    FavoriteScreen()
+    Anime2Screen()
 }
