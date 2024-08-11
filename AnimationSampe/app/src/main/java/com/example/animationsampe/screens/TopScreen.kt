@@ -59,9 +59,13 @@ fun TopScreen() {
                 Anime3Screen()
             }
 
-            composable(Screen.Anime4.route) {}
+            composable(Screen.Anime4.route) {
+                Anime4Screen()
+            }
 
-            composable(Screen.Anime5.route) {}
+            composable(Screen.Anime5.route) {
+                Anime5Screen()
+            }
         }
     }
 }
