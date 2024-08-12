@@ -3,18 +3,22 @@ package com.example.animationsampe.screens
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.animation.SizeTransform
+import androidx.compose.animation.core.animateIntOffsetAsState
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
@@ -25,13 +29,18 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.Blue
 import androidx.compose.ui.graphics.Color.Companion.White
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import kotlin.math.roundToInt
 
 @Composable
 fun Anime4Screen() {
@@ -40,7 +49,11 @@ fun Anime4Screen() {
             .fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        AnimateContentDemo()
+        Column {
+            AnimateContentDemo()
+            Spacer(modifier = Modifier.height(20.dp))
+            MovedContentDemo()
+        }
     }
 }
 
@@ -100,4 +113,42 @@ fun AnimateContentDemo() {
         }
     }
 
+}
+
+
+// タップしたら移動するボックス
+@Composable
+fun MovedContentDemo() {
+    var moved by remember { mutableStateOf(false) }
+
+    // ピクセル値で移動距離を保持
+    val pxToMove = with(LocalDensity.current) {
+        100.dp.toPx().roundToInt()
+    }
+
+    // アニメーション状態を保持する
+    val offset by animateIntOffsetAsState(
+        targetValue = if (moved) {
+            // 右にpxToMove 下にpxToMove移動
+            IntOffset(pxToMove, pxToMove)
+        } else {
+            IntOffset.Zero
+        },
+        label = "offset"
+    )
+
+    Box(
+        modifier = Modifier
+            .offset {
+                offset
+            }
+            .background(Blue)
+            .size(100.dp)
+            .clickable(
+                interactionSource = remember { MutableInteractionSource() },
+                indication = null
+            ) {
+                moved = !moved
+            }
+    )
 }
