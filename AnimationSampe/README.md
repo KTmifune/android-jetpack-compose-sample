@@ -5,9 +5,16 @@
 
 - 画面
   
-| Screen1  | Screen2  | Screen3  |  Screen4 | Screen5  |
-|---|---|---|---|---|
-| Boxのサイズと色アニメ | ❄ | ❄ | ❄ | ❄ |
-| ![Screen1](https://github.com/user-attachments/assets/f5d0c28a-7ba6-4ba6-bb1d-8d70bbe69ffe) | ❄ | ❄ | ❄ | ❄ |
-| ❄ | ❄ | ❄ | ❄ | ❄ |
+| 画面  | Screen1️  | Screen2  |
+|---|---|---|
+| 概要 | Boxのサイズと色の変化 | 開閉/出現消失 |
+| 参考 | [単一/複数のアニメ](https://developer.android.com/develop/ui/compose/animation/value-based?hl=ja#animate-as-state) | [開閉](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animation-modifiers)/[消失](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedvisibility) |
+| 画像 |![screen1](https://github.com/user-attachments/assets/01ce48e9-d3d9-4365-b60a-3e20ea299e50)|![screen2](https://github.com/user-attachments/assets/a9efc713-8901-4959-a732-f3a0c6ded346) |
+
+
+
+
+
+
+
 
