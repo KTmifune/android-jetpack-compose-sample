@@ -14,6 +14,12 @@
 
 
 
+| 画面  | Screen3  | Screen4  |
+|---|---|---|
+| 概要 | コンテンツのアニメーション | コンテンツのアニメーション2 |
+| 参考 | [AnimatedContent](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedcontent) |[AnimatedContent](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedcontent) |
+| 画像 |![screen3](https://github.com/user-attachments/assets/afa868f7-fabb-4ecd-abc0-32f7bd292be7)|![screen4](https://github.com/user-attachments/assets/7d12657b-2a92-41f5-8c4d-d8c68d5c1f03)
+ |
 
 
 
