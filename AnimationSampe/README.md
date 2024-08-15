@@ -12,14 +12,17 @@
 | 画像 |![screen1](https://github.com/user-attachments/assets/01ce48e9-d3d9-4365-b60a-3e20ea299e50)|![screen2](https://github.com/user-attachments/assets/a9efc713-8901-4959-a732-f3a0c6ded346) |
 
 
-
-
 | 画面  | Screen3  | Screen4  |
 |---|---|---|
 | 概要 | コンテンツのアニメーション | コンテンツのアニメーション2 |
 | 参考 | [AnimatedContent](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedcontent) |[AnimatedContent](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedcontent) |
-| 画像 |![screen3](https://github.com/user-attachments/assets/afa868f7-fabb-4ecd-abc0-32f7bd292be7)|![screen4](https://github.com/user-attachments/assets/7d12657b-2a92-41f5-8c4d-d8c68d5c1f03)
- |
+| 画像 |![screen3](https://github.com/user-attachments/assets/afa868f7-fabb-4ecd-abc0-32f7bd292be7)|![screen4](https://github.com/user-attachments/assets/7d12657b-2a92-41f5-8c4d-d8c68d5c1f03)|
+
+| 画面  | Screen5  | -  |
+|---|---|---|
+| 概要 | テキストアニメーション | - |
+| 参考 | []() |[AnimatedContent](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedcontent) |
+| 画像 |![screen5](https://github.com/user-attachments/assets/16199d49-fc91-4e82-83cc-43cdb450625d)||
 
 
 
