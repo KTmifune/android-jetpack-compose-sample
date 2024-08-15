@@ -21,7 +21,7 @@
 | 画面  | Screen5  | -  |
 |---|---|---|
 | 概要 | テキストアニメーション | - |
-| 参考 | []() |[AnimatedContent](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#animatedcontent) |
+| 参考 | [テキストの拡大縮小](https://developer.android.com/develop/ui/compose/animation/quick-guide?hl=ja#animate-text-scale) |
 | 画像 |![screen5](https://github.com/user-attachments/assets/16199d49-fc91-4e82-83cc-43cdb450625d)||
 
 
