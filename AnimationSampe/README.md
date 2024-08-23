@@ -1,7 +1,7 @@
 # アニメーションサンプル
 - 参考
   - https://developer.android.com/develop/ui/compose/animation/introduction?hl=ja
-  - [アニメーション](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#enter-exit-transition)
+  - [Transition](https://developer.android.com/develop/ui/compose/animation/composables-modifiers?hl=ja#enter-exit-transition)
   - [リストアニメーション](https://developer.android.com/develop/ui/compose/lists?hl=ja#item-animations)
 
 - 画面
