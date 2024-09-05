@@ -12,5 +12,5 @@
     - pagerState.initialPageはfoundation-android:1.6.0以降は削除されている。
     　coil-composeなどComposeに関係するライブラリImplementした際に、ライブラリのバージョンによって、依存するComposeのバージョンが自動的に更新されるので、Syncしたらいきなり使えないみたいなこともある。（大体代替方法はある）
 
-- 画面キャプチャ
+- サンプルキャプチャ
   - |![sample](https://github.com/user-attachments/assets/1494833d-146a-41b9-b5e3-142374660458)||
