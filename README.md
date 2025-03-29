@@ -1,5 +1,5 @@
 # android-jetpack-compose-sample
-JetpackComposeのサンプルアプリ
+JetpackComposeのサンプル
 
 - 参考
   - [Google Android Developers](https://developer.android.com/develop/ui/compose/layouts?hl=ja)
